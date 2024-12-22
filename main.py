@@ -20,7 +20,6 @@ num_comp = random_num()
 
 while flag:
     
-    
     num_user = int(input())
 
     # if respond(num_user):
