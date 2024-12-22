@@ -24,8 +24,16 @@ while flag:
 
     # if respond(num_user):
 
-    if random_num() == num_user:
+    if num_comp == num_user:
         flag = False
         print("Ты угадал!!")
+
+
+        #это я спиздил :) сук, пиздато, особенно как это написано нравится
+        print(
+            '\n'.join(' '.join(*zip(*row))
+             for row in ([["*" if row==0 and col%3!=0 or row==1 and col%3==0 or row-col==2 or row+col==8
+             else " " for col in range(7)] for row in range(6)]))
+             )
     else:
         print("Ох, по идее близко")
